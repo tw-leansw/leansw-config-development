@@ -1,0 +1,28 @@
+server:
+  port: ${port:8080}
+
+spring:
+  thymeleaf:
+    prefix: classpath:/public/
+    cache: false
+    mode: LEGACYHTML5
+  profiles:
+    active: development
+
+leansw:
+  mongodb:
+    host: localhost
+    port: 27017
+    database: leansw
+
+quartz:
+  enabled: true
+  group: mytrigger
+  simplecron: 0 0/1 * 1/1 * ? *
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    preferIpAddress: true

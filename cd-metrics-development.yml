@@ -1,0 +1,10 @@
+spring:
+    profiles: development
+server:
+    port: 9001
+
+leansw:
+  mongodb:
+    host: localhost
+    port: 27017
+    database: leansw-dev
