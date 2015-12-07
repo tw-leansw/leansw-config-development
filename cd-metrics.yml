@@ -1,5 +1,5 @@
 server:
-  port: ${port:8080}
+  port: 9001
 
 spring:
   thymeleaf:
@@ -13,7 +13,7 @@ leansw:
   mongodb:
     host: localhost
     port: 27017
-    database: leansw
+    database: leansw-dev
 
 quartz:
   enabled: true
